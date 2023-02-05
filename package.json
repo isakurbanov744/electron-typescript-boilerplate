@@ -1,0 +1,17 @@
+{
+  "name": "electron-typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "Electron boilerplate code with TypeScript binding",
+  "author": {
+    "name": "Isa Kurbanov"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "compile": "tsc && copyfiles -f src/index.html build",
+    "start": "npm run compile && electron ."
+  },
+  "dependencies": {
+    "electron": "^22.2.0",
+    "typescript": "^4.9.5"
+  }
+}
